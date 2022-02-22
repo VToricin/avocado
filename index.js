@@ -27,4 +27,4 @@ window.addEventListener('scroll',()=>{
   }
 })
 
-window.addEventListener('resize', avocadoPosition);
+window.addEventListener('orientationchange', avocadoPosition);
