@@ -1,0 +1,59 @@
+
+
+.start-view {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    height: 100vh;
+
+    
+
+    &__body {
+       width: $bigBlockWidth;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+       @media (max-width: $phoneWidth) {
+        min-width: 100%;
+       }
+      
+    }
+    &__name {
+        height: 200px;
+        font-family: 'Comfortaa', cursive;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-family: 'Amatic SC', cursive;
+        font-weight: 700;
+        font-size: 74px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__picture {
+        position: relative;
+        height: 70vh;
+        width: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        
+        img {
+            position: absolute;
+            
+            z-index: 10;
+            width: 600px;
+            /* @media (max-width : $tabWidth) {
+                
+            } */
+            @media (max-width : $phoneWidth) {
+                width:100%;
+            }
+
+        }
+        
+    }
+}

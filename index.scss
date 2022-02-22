@@ -1,0 +1,35 @@
+$bigBlockWidth : 1040px;
+$tabWidth:1040px;
+$phoneWidth:700px;
+
+
+
+
+@import './StartView.scss';
+@import './MainBlock.scss';
+
+.isRipe {
+    color: black;
+    font-weight: 700;
+}
+p {
+    padding: 10px;
+    @media (max-width : $phoneWidth) {
+        text-align: center;
+    }
+}
+
+body {
+    margin: 0px;
+    background-color: white;
+}
+.alignerCenter {
+    margin: 20px 20px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.amatic {
+    font-family: 'Amatic SC', cursive;
+}

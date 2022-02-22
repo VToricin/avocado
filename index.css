@@ -1,0 +1,176 @@
+.start-view {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgray;
+  height: 100vh;
+}
+.start-view__body {
+  width: 1040px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (max-width: 700px) {
+  .start-view__body {
+    min-width: 100%;
+  }
+}
+.start-view__name {
+  height: 200px;
+  font-family: "Comfortaa", cursive;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Amatic SC", cursive;
+  font-weight: 700;
+  font-size: 74px;
+  display: flex;
+  align-items: center;
+}
+.start-view__picture {
+  position: relative;
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.start-view__picture img {
+  position: absolute;
+  z-index: 10;
+  width: 600px;
+  /* @media (max-width : $tabWidth) {
+
+  } */
+}
+@media (max-width: 700px) {
+  .start-view__picture img {
+    width: 100%;
+  }
+}
+
+.MainBlock {
+  background-color: white;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 1040px) {
+  .MainBlock {
+    width: 95%;
+  }
+}
+.MainBlock__body {
+  width: 1040px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 30px;
+  flex-direction: column;
+  /* .rotatedBlock {
+         height: 200px;
+         width: 110%;
+         transform: rotate(2deg);
+         background-color: white;
+     }
+  */
+}
+@media (max-width: 1040px) {
+  .MainBlock__body {
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .MainBlock__body {
+    flex-direction: column;
+  }
+}
+.MainBlock__body .mainBlockMoto {
+  font-size: 65px;
+  font-family: "Amatic SC", cursive;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  color: #bbbbbb;
+  transition: 1200ms ease;
+}
+@media (max-width: 700px) {
+  .MainBlock__body .mainBlockMoto {
+    width: 100%;
+  }
+}
+.MainBlock__body .mainBlockText {
+  font-size: 30px;
+  font-family: "Amatic SC", cursive;
+  font-weight: 700;
+  width: 100%;
+  color: grey;
+}
+@media (max-width: 1040px) {
+  .MainBlock__body .mainBlockText {
+    width: 100%;
+  }
+}
+.MainBlock__body .MainBlock__textPictureGroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin: 15px 15px;
+}
+@media (max-width: 700px) {
+  .MainBlock__body .MainBlock__textPictureGroup {
+    flex-direction: column;
+    margin: 15px 0px;
+  }
+}
+.MainBlock__body .MainBlock__textPictureGroup .MainBlock__picture {
+  width: 200px;
+  height: 200px;
+  margin: 0px 15px;
+}
+@media (max-width: 700px) {
+  .MainBlock__body .MainBlock__textPictureGroup .MainBlock__picture {
+    width: 100%;
+    height: auto;
+    margin: 15px 0px;
+  }
+}
+.MainBlock__body .MainBlock__textPictureGroup .MainBlock__playstoreBlock {
+  font-size: 25px;
+}
+
+.isRipe {
+  color: black;
+  font-weight: 700;
+}
+
+p {
+  padding: 10px;
+}
+@media (max-width: 700px) {
+  p {
+    text-align: center;
+  }
+}
+
+body {
+  margin: 0px;
+  background-color: white;
+}
+
+.alignerCenter {
+  margin: 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.amatic {
+  font-family: "Amatic SC", cursive;
+}/*# sourceMappingURL=index.css.map */

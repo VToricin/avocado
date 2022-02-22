@@ -1,0 +1,100 @@
+.MainBlock {
+    background-color: white;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (max-width: $tabWidth) {
+        width: 95%;
+       
+    }
+    &__body {
+        width: $bigBlockWidth;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 30px;
+        flex-direction: column;
+
+        @media (max-width: $tabWidth) {
+            width: 100%;
+            
+        }
+        @media (max-width: $phoneWidth) {
+            
+            flex-direction: column;
+        }
+
+
+        .mainBlockMoto {
+            font-size: 65px;
+            font-family: 'Amatic SC', cursive;
+            font-weight: 700;
+            width: 100%;
+            text-align: center;
+            color: rgb(187, 187, 187);
+            transition: 1200ms ease;
+            @media (max-width: $phoneWidth) {
+                width: 100%;
+            }
+        }
+        .mainBlockText {
+            font-size: 30px;
+            font-family: 'Amatic SC', cursive;
+            font-weight: 700;
+            width: 100%;
+            color: grey;
+            @media (max-width: $tabWidth) {
+                width: 100%;
+            }
+        }
+        
+        .MainBlock__textPictureGroup {
+           display: flex;
+           align-items: center;
+           justify-content: space-around; 
+           width: 100%;
+           margin: 15px 15px;
+
+           @media (max-width: $phoneWidth) {
+            flex-direction: column;
+            margin: 15px 0px;
+           }
+
+           .MainBlock__picture {
+              width: 200px;
+              height: 200px;
+              margin: 0px 15px;
+              @media (max-width: $phoneWidth) {
+                width: 100%;
+                height: auto;
+                margin: 15px 0px;
+              }
+           }
+        .MainBlock__playstoreBlock {
+           font-size: 25px;    
+        }
+          
+             
+           
+        }
+
+
+
+
+
+
+    
+
+
+
+    /* .rotatedBlock {
+        height: 200px;
+        width: 110%;
+        transform: rotate(2deg);
+        background-color: white;
+    }
+ */
+    }
+}
