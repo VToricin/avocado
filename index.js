@@ -27,4 +27,6 @@ window.addEventListener('scroll',()=>{
   }
 })
 
-window.addEventListener('orientationchange', avocadoPosition);
+screen.orientation.addEventListener('change', function() {
+   avocadoPosition(); 
+})
