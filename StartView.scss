@@ -22,14 +22,42 @@
       
     }
     &__name {
-        height: 200px;
+        height: 20px;
         font-family: 'Comfortaa', cursive;
         font-family: 'Open Sans Condensed', sans-serif;
         font-family: 'Amatic SC', cursive;
         font-weight: 700;
-        font-size: 74px;
+        
         display: flex;
         align-items: center;
+        justify-content: flex-start;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0px;
+        
+
+        .isRipeBrandName {
+            position: absolute;
+            left: -85px;
+            font-size: 74px;
+            transition: 450ms;
+            display: flex;
+            justify-content: center;
+            
+            
+
+            .scrolled {
+                top: -20px;
+                right: 7px;
+                left: auto;
+                transition: 450ms;
+                margin: 0px 0px;
+                padding: 0px;
+    
+            }
+        }
+        
+        
     }
 
     &__picture {
