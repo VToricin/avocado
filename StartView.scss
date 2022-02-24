@@ -27,7 +27,7 @@
         font-family: 'Open Sans Condensed', sans-serif;
         font-family: 'Amatic SC', cursive;
         font-weight: 700;
-        
+        z-index: 11;
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -43,18 +43,11 @@
             transition: 450ms;
             display: flex;
             justify-content: center;
+            z-index: 11;
             
             
 
-            .scrolled {
-                top: -20px;
-                right: 7px;
-                left: auto;
-                transition: 450ms;
-                margin: 0px 0px;
-                padding: 0px;
-    
-            }
+            
         }
         
         
@@ -84,4 +77,15 @@
         }
         
     }
+}
+.scrolled {
+    
+    z-index: 999;
+    transition: 450ms;
+    margin: 0px 0px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 0 1px 3px rgb(23 23 23 / 24%);
+
 }

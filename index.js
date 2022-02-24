@@ -43,7 +43,7 @@ window.addEventListener('scroll',()=>{
   colorize();
   if (window.pageYOffset>120) {
      isRipeBrandName.classList.add('scrolled');
-     isRipeBrandName.style.left = `${window.innerWidth/2-70}px`
+     isRipeBrandName.style.left = `${window.innerWidth/2-73}px`
      isRipeBrandName.style.fontSize = `25px`;
      startView__name.style.top = `3px`;
      

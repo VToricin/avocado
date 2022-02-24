@@ -24,6 +24,7 @@
   font-family: "Open Sans Condensed", sans-serif;
   font-family: "Amatic SC", cursive;
   font-weight: 700;
+  z-index: 11;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -38,14 +39,7 @@
   transition: 450ms;
   display: flex;
   justify-content: center;
-}
-.start-view__name .isRipeBrandName .scrolled {
-  top: -20px;
-  right: 7px;
-  left: auto;
-  transition: 450ms;
-  margin: 0px 0px;
-  padding: 0px;
+  z-index: 11;
 }
 .start-view__picture {
   position: relative;
@@ -70,6 +64,16 @@
   }
 }
 
+.scrolled {
+  z-index: 999;
+  transition: 450ms;
+  margin: 0px 0px;
+  padding: 5px;
+  background-color: white;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 0 1px 3px rgba(23, 23, 23, 0.24);
+}
+
 .MainBlock {
   background-color: white;
   width: 100%;
@@ -80,7 +84,7 @@
 }
 @media (max-width: 1040px) {
   .MainBlock {
-    width: 95%;
+    width: 98%;
   }
 }
 .MainBlock__body {
