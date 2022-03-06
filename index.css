@@ -84,7 +84,7 @@
 }
 @media (max-width: 1040px) {
   .MainBlock {
-    width: 98%;
+    width: 100%;
   }
 }
 .MainBlock__body {
@@ -152,7 +152,7 @@
   }
 }
 .MainBlock__body .MainBlock__textPictureGroup .MainBlock__picture {
-  width: 200px;
+  width: 300px;
   height: 200px;
   margin: 0px 15px;
 }

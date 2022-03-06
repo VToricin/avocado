@@ -7,17 +7,18 @@ let startView__name = document.querySelector('.start-view__name');
 
 function avocadoPosition () {
 windowHeight = window.innerHeight;
-if (windowHeight<420) {
+if (window.innerHeightHeight<420) {
    avocadoTop = -40;
    
-} else if (windowHeight<680) {
+} else if (window.innerHeight<660) {
    avocadoTop = 250;   
 } else {
-   avocadoTop = 320;
+   avocadoTop = 280;
 } 
 
 avocado.style.top = `${avocadoTop}px`;
 }
+
 function colorize () {
    isRipeBrandName.style.color = '#772b97';
    setTimeout(()=>{
@@ -52,10 +53,22 @@ window.addEventListener('scroll',()=>{
      isRipeBrandName.style.left = `-85px`;
      isRipeBrandName.style.fontSize = `75px`;
      startView__name.style.top = `19px`;
+
      
   }
 
-  avocado.style.top = `${avocadoTop-window.pageYOffset}px`;
+
+  
+   if (window.innerWidth<420) {
+      avocado.style.top = `${avocadoTop-window.pageYOffset*0.7}px`;
+      
+   } else if (window.innerWidth<660) {
+      avocado.style.top = `${avocadoTop-window.pageYOffset}px`;   
+   } else {
+      avocado.style.top = `${avocadoTop-window.pageYOffset*1.2}px`;
+   } 
+
+  
   
 
   if (window.pageYOffset>400) {
